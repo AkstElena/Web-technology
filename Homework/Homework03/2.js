@@ -11,8 +11,8 @@ function greeting(name) {
   let now = new Date();
   let hour = now.getHours();
 
-  if (hour >= 4 && hour <= 11) console.log(`Доброе утро, ${name}!`);
-  else if (hour >= 12 && hour <= 16) console.log(`Добрый день, ${name}!`);
-  else if (hour >= 17 && hour <= 23) console.log(`Добрый вечер, ${name}!`);
+  if (hour >= 4 && hour < 12) console.log(`Доброе утро, ${name}!`);
+  else if (hour >= 12 && hour < 17) console.log(`Добрый день, ${name}!`);
+  else if (hour >= 17 && hour < 24) console.log(`Добрый вечер, ${name}!`);
   else console.log(`Доброй ночи, ${name}!`);
 }
